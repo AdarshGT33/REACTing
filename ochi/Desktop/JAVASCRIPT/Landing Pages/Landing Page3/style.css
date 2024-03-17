@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #ab8f97;
+    display: flex;
+}
+#part1{
+    height: 100%;
+    width: 25%;
+}
+#part2{
+    height: 100%;
+    width: 65%;
+    background-color: rgb(31, 214, 102);
+    background-image: url(https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    object-position: top;
+}
+#overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #ab8f979e;
+}
+#part3{
+    height: 100%;
+    width: 10%;
+}
+#text{
+    /*height: 300px;*/
+    position: absolute;
+    width: 400px;
+    /*background-color: rgb(5, 253, 34);*/
+    left: 8%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+#text>h1{
+    font-size: 80px;
+    font-family: monument;
+    font-weight: 800;
+    letter-spacing: 3px;
+    line-height: 65px;
+    text-transform: uppercase;
+    color: white;
+}
+#small-image-div{
+    height: 400px;
+    width: 300px;
+    background-image: url(https://images.unsplash.com/photo-1524504542391-127872011665?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    right: 6%;
+    transform: translate(0,-50%);
+    background-color: limegreen;
+}
+#overlay-in{
+    height: 100%;
+    width: 100%;
+    background-color: #ab8f9762;
+}
+#vertical-text{
+    position: absolute;
+    rotate: 90deg;
+    right: -29%;
+    top: 29%;
+}
+#vertical-text h1{
+    font-size: 60px;
+    font-weight: 900;
+    font-family: monument;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+}
+#nav{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 45px;
+    left: 9%;
+    top: 5%;
+}
+#nav img{
+    font-size: 15px;
+}
+#nav h5{
+    font-size: 10px;
+    color: white;
+    margin-left: 200px;
+}

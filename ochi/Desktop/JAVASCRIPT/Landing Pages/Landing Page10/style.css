@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #D0D4D5;
+    position: relative;
+}
+#nav{
+    height: 80px;
+    padding: 0 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav img{
+    height: 50px;
+    margin-right: 100px;
+}
+#nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav-part1 h4{
+    margin-right: 50px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+#nav-part2 i{
+    margin-right: 50px;
+    font-size: 18px;
+}
+#content{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: calc(100% - 80px);
+}
+#left{
+    width: 40%;
+    height: 100%;
+    padding: 90px 70px;
+}
+#left h5{
+    font-size: 17px;
+    font-weight: 500;
+    color: #6e7a7d;
+}
+#left h1{
+    font-size: 48px;
+    margin-top: 10px;
+    margin-bottom: 23px;
+    text-transform: uppercase;
+}
+#left p{
+    width: 95%;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+#left button{
+    background-color: #000612;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 8px;
+    padding: 12px 29px;
+    border-radius: 50px;
+    border-top-left-radius: 0;
+
+}
+#right{
+    height: 100%;
+    width: 60%;
+    position: relative;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+#right::-webkit-scrollbar{
+    display: none;
+}
+.elem{
+    height: 400px;
+    width: 250px;
+    top: 12%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin-right: 13px;
+    display: inline-block;
+}
+.elem img{
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    top: 12%;
+    object-fit: contain;
+}
+.elem h4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #D0D4D5;
+    padding: 12px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+}
+.elem h5{
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    font-size: 10px;
+    font-weight: 500;
+    color: white;
+    background-color: #000612;
+    padding: 11px 17px;
+    border-radius: 5px;
+    border-bottom-right-radius: 0;
+}

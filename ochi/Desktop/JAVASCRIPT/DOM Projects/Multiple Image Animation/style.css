@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+.elem{
+    height: 100px;
+    width: 100%;
+    border-bottom: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+.elem h1{
+    font-size: 6vw;
+    z-index: 9;
+    mix-blend-mode: difference;
+}
+.elem img{
+    height: 96px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+    position: absolute;
+    transition: all linear 0.1s;
+    /* transform: translate(-50%,-50%); */
+    opacity: 0;
+}

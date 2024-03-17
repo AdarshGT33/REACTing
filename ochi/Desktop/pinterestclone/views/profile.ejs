@@ -1,0 +1,38 @@
+<% include ./partials/header.ejs %>
+<form id="uploadform" hidden action="/fileupload" method="post" enctype="multipart/form-data">
+    <input type="file" name="image">
+</form>
+<div class="profile w-full h-screen bg-white pt-1">
+    <div class="profdets flex flex-col items-center mt-7">
+        <div class="relative">
+            <span id="uploadicon" class="w-6 h-6 absolute bg-zinc-100 bottom-0 right-0 rounded-full flex items-center justify-center">
+                <i class="ri-pencil-fill"></i>
+            </span>
+            <div class="w-20 h-20 rounded-full overflow-hidden">
+                <img class="w-full h-full object-cover" src="https://i.pinimg.com/564x/bd/d2/5a/bdd25a1636b6530127aa8ecc39603a88.jpg" alt="">
+            </div>
+        </div>
+        <h1 class="text-2xl font-semibold">Raghunandan Ram</h1>
+            <h5 class="text-sm">@username</h5>
+            <a href="/edit" class=" mt-5 px-6 py-1 rounded-full bg-green-500 text-sm font-medium">Edit</a>
+    </div>
+    <div class="cards flex flex-wrap gap-10 px-10 mt-5">
+        <div class="card">
+            <div class="w-52 h-36 bg-pink-600 rounded-xl overflow-hidden ">
+                <img class="w-full h-full object-cover" src="https://i.pinimg.com/564x/90/54/4f/90544f7564eeb55199c666a845ba1a9c.jpg" alt="">
+            </div>
+            <h3 class="text-lg font-semibold">All Pins</h3>
+            <h5 class="text-sm font-semibold">20 Pins</h5>
+        </div>
+    </div>
+</div>
+<script>
+    document.querySelector("#uploadicon").addEventListener("click", function(){
+        document.querySelector("#uploadform input").click();
+    })
+
+    document.querySelector("uploadform input").addEventListener("change", function(){
+        document.querySelector("#uploadform").submit();
+    })
+</script>
+<% include ./partials/footer.ejs %>

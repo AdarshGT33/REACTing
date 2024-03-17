@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+#main h1{
+    font-family: monument;
+    font-size: 5vw;
+}
+#main img{
+    height: 40%;
+    width: 60%;
+    object-fit: cover;
+}
+#main h6{
+    font-size: 2.2vw;
+}
