@@ -11,7 +11,7 @@ function AddTodo() {
         e.preventDefault()
 
         dispatch(addTodo(input))
-        setInput('') // cleaning the input as better code-visual approach
+        setInput('') // cleaning the input as a better code-visual approach
     }
 
   return (

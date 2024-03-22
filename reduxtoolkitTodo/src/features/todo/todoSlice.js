@@ -16,7 +16,7 @@ export const todoSlice = createSlice({
             state.todos.push(todo) // updating state
         },
         removeTodo: (state, action) => {
-            state.todos = state.todos.filter((todo) => {todo.id !== action.payload}) // over-writing the current state of todo with the required state of todo according to the action required
+            state.todos = state.todos.filter((todo) => todo.id !== action.payload) // over-writing the current state of todo with the required state of todo according to the action required
         }
     }
 })
