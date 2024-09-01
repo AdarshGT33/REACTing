@@ -21,7 +21,7 @@ function App() {
 
   const toggleTodo = (id) => {
     setTodos((prev) => prev.map((prevTodo) => prevTodo.id === id ? {...prevTodo, complete : !prevTodo.complete} : prevTodo))
-  } // used spread operator to access specific or desired properties of todo defined in the TodoContext.js
+  } // used spread operator to destructor object into its properties of todo defined in the TodoContext.js
 
   useEffect(() => {
     const todos = JSON.parse(localStorage.getItem("todos"))
